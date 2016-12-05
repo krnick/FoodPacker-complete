@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/grayblue"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/style_list"
+        app:itemIconTint="@color/style_list"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/nav_header_main"
+                android:id="@+id/navigation_header"/>
+        </LinearLayout>
+        <info.hoang8f.widget.FButton
+            fbutton:buttonColor="@color/darkpink"
+            fbutton:shadowColor="@color/shadowpink"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="12dp"
+            fbutton:cornerRadius="10dp"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="70dp"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            />
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

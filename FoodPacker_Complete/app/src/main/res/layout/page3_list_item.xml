@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/usr_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <FrameLayout
+            android:id="@+id/pic_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp">
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/friendProfilePicture"
+                android:layout_height="40dp"
+                android:layout_width="40dp"/>
+            <ImageView
+                android:id="@+id/android"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sub_circle"
+                android:contentDescription="@null" />
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pic_block"
+            android:layout_toEndOf="@+id/pic_block"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你的名字"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:background="@drawable/score"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star_icon"
+                    android:contentDescription="@null"/>
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:text="3.5"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/salary_block">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/salary_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/coins"/>
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="100元"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errand_block"
+            android:layout_below="@+id/salary_block"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/errand_money"
+                android:src="@drawable/errand_shoe" />
+            <TextView
+                android:id="@+id/fee"
+                android:text="跑腿費"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/yuan"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="元"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

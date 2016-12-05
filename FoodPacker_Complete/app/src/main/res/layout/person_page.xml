@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/comment_score"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/comment_circle"/>
+        <TextView
+            android:id="@+id/desg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:text="5.0"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:fontFamily="sans-serif-smallcaps"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/comment_score"
+        android:layout_marginRight="20dp"
+        android:text="你的名字"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkblue"/>
+
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="感謝你的外送"
+        android:textSize="15sp"
+        android:textColor="@color/fbutton_color_asbestos" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:id="@+id/salary_icon"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/salary"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/comment"/>-->
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/salary"
+        android:layout_alignEnd="@+id/salary" />
+
+</RelativeLayout>

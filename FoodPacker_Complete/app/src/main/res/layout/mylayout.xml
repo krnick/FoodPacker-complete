@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    >
+
+
+
+
+    <TextView
+        android:id="@+id/numtext"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="65dp"
+        android:textSize="40dp"/>
+
+    <NumberPicker
+        android:id="@+id/numpick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.75"
+        android:scaleY="0.5"></NumberPicker>
+</LinearLayout>

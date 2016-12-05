@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Foodpacker2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_check_map">CheckMapActivity</string>
+    <string name="title_activity_socket_test">SocketTest</string>
+    <string name="title_activity_aaaaaaa">Map</string>
+    <!-- facebook -->
+    <string name="facebook_app_id">826542434048893</string>
+
+
+    <string name="action_leave">Leave</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_message">Message</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+
+    <!-- messages -->
+    <string name="message_welcome">FoodPacker - 聊天室 –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+</resources>
